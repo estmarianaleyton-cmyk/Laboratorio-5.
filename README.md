@@ -24,11 +24,11 @@ En esta práctica se evaluó técnica y funcionalmente el monitor Mindray uMEC 1
 
 La práctica se desarrolló en tres partes. En la Parte A se revisó la información técnica de los equipos. En la Parte B se hicieron las pruebas experimentales. La Parte C correspondió al análisis y la documentación de los resultados.
 
-## **PARTE A: Revisión técnica**
+## *PARTE A: Revisión técnica*
 
 Se consulto el manual de operación del monitor Mindray uMEC 100 [1] y la información técnica del simulador Pronk OxSim OX-1 [2], [3], además de literatura sobre pulsioximetría [4]–[6] y las normas aplicables [7], [8]. Con esta revisión se identificó el modo de operación del monitor y los parámetros que simula el OX-1. También se establecieron los errores máximos permitidos (EMP) declarados por el fabricante para el módulo de SpO₂ del uMEC 100: ±2 % absoluto en SpO₂ en el rango de 70 % a 100 % (modo adulto/pediátrico) y ±3 bpm en la frecuencia de pulso [1].
 
-## **PARTE B: Pruebas con el simulador**
+## *PARTE B: Pruebas con el simulador*
 
 1. Preparación de los registros: Se construyó una tabla para poder calcular los errores de medición de FC y SpO₂.
 2. Montaje: Se encendió el uMEC 100, que entra automáticamente en modo de monitorización al arrancar [1], y se verificó que estuviera en ese modo. Luego se colocó la pinza de pulsioximetría del monitor en el dedo del simulador OxSim OX-1.
@@ -49,11 +49,19 @@ Es importante tener en cuenta que, según el fabricante, la exactitud de SpO₂ 
 
 # **Referencias**
 [1] Shenzhen Mindray Bio-Medical Electronics Co., Ltd., uMEC 60/uMEC 70/uMEC 80/uMEC 100/uMEC 120/uMEC 150 Patient Monitor – Operator's Manual, rev. 2.0, P/N 046-026551-00. Shenzhen, China, 2023.
+
 [2] Pronk Technologies Inc., "OX-1 OxSim," MedWrench. [En línea]. Disponible en: https://www.medwrench.com/equipment/3862/pronk-technologies-ox-1-oxsim
+
 [3] K. A. Ruiter, "Light transmission simulator for pulse oximeter," U.S. Patent 7 346 378 B2, 18 mar. 2008 (cesionario: Pronk Technologies Inc.).
+
 [4] E. D. Chan, M. M. Chan y M. M. Chan, "Pulse oximetry: Understanding its basic principles facilitates appreciation of its limitations," Respiratory Medicine, vol. 107, n.º 6, pp. 789–799, 2013, doi: 10.1016/j.rmed.2013.02.004.
+
 [5] A. Jubran, "Pulse oximetry," Critical Care, vol. 19, art. 272, 2015, doi: 10.1186/s13054-015-0984-8.
+
 [6] J. Allen, "Photoplethysmography and its application in clinical physiological measurement," Physiological Measurement, vol. 28, n.º 3, pp. R1–R39, 2007, doi: 10.1088/0967-3334/28/3/R01.
+
 [7] Medical electrical equipment – Part 2-61: Particular requirements for basic safety and essential performance of pulse oximeter equipment, ISO 80601-2-61:2017.
+
 [8] Medical electrical equipment – Part 1-8: General requirements for basic safety and essential performance – Collateral standard: General requirements, tests and guidance for alarm systems in medical electrical equipment and medical electrical systems, IEC 60601-1-8:2006+AMD1:2012+AMD2:2020.
+
 [9] J. G. Webster, Ed., Medical Instrumentation: Application and Design, 4.ª ed. Hoboken, NJ, EE. UU.: Wiley, 2010.
