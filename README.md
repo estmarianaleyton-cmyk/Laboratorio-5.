@@ -6,7 +6,7 @@
 
 **Estudiantes:** Dubrasca Martínez, Mariana Leyton, Joshara Valentina Palacios
 
-**Fecha:** 20 de agosto del 2026
+**Fecha:** 28 de octubre del 2026
 
 **Título de la práctica:** Simulación y Monitoreo de Variables Cardiovasculares y Hemodinámicas
 
