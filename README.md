@@ -39,7 +39,7 @@ Se consulto el manual de operación del monitor Mindray uMEC 100 [1] y la inform
 
 En cada condición, los errores se calcularon de la siguiente manera:
 
-<img width="449" height="168" alt="image" src= https://github.com/estmarianaleyton-cmyk/Laboratorio-2./blob/main/Frecuencia%20de%20corte.png>
+<img width="449" height="168" alt="image" src= https://github.com/estmarianaleyton-cmyk/Laboratorio-5./blob/main/Screenshot_20261102-143623.png>
 
 donde X_simulado es el valor nominal del modo seleccionado en el OxSim OX-1, tomado como referencia, y X_monitor es el valor que muestra el uMEC 100. Cuando se tomó más de una lectura, se usó su promedio. Los errores se compararon con los EMP del fabricante [1]. Cada prueba de alarma se clasificó como correcta, falso positivo o falso negativo, según si el monitor respondió como se esperaba frente al límite configurado.
 
