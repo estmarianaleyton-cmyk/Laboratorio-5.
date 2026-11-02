@@ -8,6 +8,6 @@
 
 **Fecha:** 20 de agosto del 2026
 
-**Título de la práctica:**
+**Título de la práctica:** Simulación y Monitoreo de Variables Cardiovasculares y Hemodinámicas
 
 # **Introducción**
