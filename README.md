@@ -123,7 +123,7 @@ Durante las pruebas se comprobó la activación de las alarmas visuales y sonora
 
 En la simulación de hipoxemia, el valor de SpO₂ de 85 % se encontraba por debajo del límite inferior configurado de 90 %, por lo que la activación de la alarma fue correcta.
 
-En la condición de baja perfusión de la segunda prueba, el monitor generó las alarmas técnicas «Sin pulso» y «Exceso de luz para SpO₂», indicando dificultades para obtener una lectura válida.
+En la condición de baja perfusión de la segunda prueba, el monitor generó las alarmas técnicas «Sin pulso» y «Exceso de luz para SpO₂».
 
 # **Análisis de resultados**
 
