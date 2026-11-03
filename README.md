@@ -169,9 +169,11 @@ $$
 E_a = |100-99| = 1
 $$
 
+
 $$
-E_{\%} = \frac{1}{99}\times100 = 1{,}01\%
+E_{\mathrm{porcentual}} = \frac{1}{99}\times 100 = 1{,}01
 $$
+
 
 Este cálculo corresponde a una diferencia de un punto porcentual de SpO₂ y queda sujeto a confirmar la configuración real del simulador.
 
