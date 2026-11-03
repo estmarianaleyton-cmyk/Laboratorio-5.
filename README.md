@@ -35,7 +35,7 @@ Se consulto el manual de operación del monitor Mindray uMEC 100 [1] y la inform
 3. Bradicardia: Se seleccionó en el simulador el modo de 40 lpm y SpO₂ = 95 %. Cuando los valores se estabilizaron, se registraron las lecturas del monitor. Se calcularon los errores absoluto y porcentual de cada variable y se registró fotográficamente la onda fotopletismográfica.
 4. Hipoxemia (alarma de SpO₂ baja): Se fijó el límite inferior de alarma de SpO₂ del monitor en 90 % y se seleccionó en el simulador el modo de 80 bpm y SpO₂ = 85 %. Pasados 5 s, se verificó si se activaba la alarma sonora o visual y se registraron las lecturas para calcular los errores.
 5. SpO₂  elevada con alta perfusión (alarma de SpO₂  alta): Se fijó el límite superior de alarma de SpO₂ en 97 % y se seleccionó el modo de 99 % y 80 lpm con baja perfusión (PI ≈ 0,2) [2]. Pasados 5 s, se verificó la activación de la alarma, se calcularon los errores y se comparó la morfología y la amplitud de la onda con las de las condiciones anteriores.
-6. Taquicardia (alarma de FC alta): Se seleccionó el modo de 140 lpm y SpO₂ = 98 %, con el límite superior de alarma de FC del monitor en **[___ lpm]**. Se registró la onda fotopletismográfica, se verificó si se activaba la alarma de frecuencia elevada y se calcularon los errores.
+6. Taquicardia (alarma de FC alta): Se seleccionó el modo de 140 lpm y SpO₂ = 98 %, con el límite superior de alarma de FC del monitor en 110 lpm. Se registró la onda fotopletismográfica, se verificó si se activaba la alarma de frecuencia elevada y se calcularon los errores.
 
 En cada condición, los errores se calcularon de la siguiente manera:
 
@@ -83,6 +83,39 @@ Durante la condición de baja perfusión se observó una lectura de SpO₂ de 10
 
 Las ondas fotopletismográficas mostraron variaciones en su periodicidad de acuerdo con la frecuencia cardíaca simulada.
 
+Se realizaron dos series de pruebas con el simulador Pronk OxSim OX-1 y el monitor Mindray uMEC 100. En ambas, el monitor tomó la FC del pulso (origen SpO₂), porque no había electrodos de ECG conectados. La alarma técnica «T1 baja < 35 °C» aparece en varias capturas porque no había sonda de temperatura sobre un paciente (lectura ambiente de 22 a 25 °C) y no está relacionada con las pruebas.
+
+## Resultados de la Prueba 1
+
+**Bradicardia.** El monitor mostró 40 lpm y SpO₂ de 95 %, iguales a los valores simulados (Figura 1). La onda PPG presenta pulsos bien separados.
+
+<img width="690" height="509" alt="image" src="https://github.com/user-attachments/assets/ef24ac8e-a950-445b-8b99-42f6f7617e16" />
+
+*Figura 1. Prueba 1, bradicardia (40 lpm, SpO₂ 95 %).*
+
+**Hipoxemia.** Con 80 lpm y SpO₂ de 85 %, el monitor mostró los mismos valores y activó la alarma «SpO₂ bajo < 90», coherente con el límite inferior configurado (Figura 2).
+
+<img width="578" height="435" alt="image" src="https://github.com/user-attachments/assets/cb93d125-93b7-4ebe-b394-c2bf4755e175" />
+
+*Figura 2. Prueba 1, hipoxemia con alarma de SpO₂ baja.*
+
+**Baja perfusión.** Con el OxSim en modo 99 % Low Perf (Figura 3), el monitor mostró 100 % de SpO₂, un punto por encima del valor simulado, con un índice de perfusión de 0,45. Como 100 % supera el límite superior de 97 %, se activó la alarma «SpO₂ alto > 97» (Figura 4).
+
+<img width="602" height="447" alt="image" src="https://github.com/user-attachments/assets/e81d6888-d584-4ce7-8cf0-ea4f3299418c" />
+
+*Figura 3. OxSim OX-1 en modo 99 % Low Perf.*
+
+<img width="485" height="365" alt="image" src="https://github.com/user-attachments/assets/2be59895-bba1-4900-8cee-1462f719d274" />
+
+
+*Figura 4. Prueba 1, baja perfusión: SpO₂ de 100 % y alarma de SpO₂ alta.*
+
+**Taquicardia.** El monitor mostró 140 lpm y 98 %. El límite superior de FC era de 110 lpm y se activó la alarma «FP alta > 110» (Figura 5). La onda PPG presenta pulsos más próximos entre sí.
+
+<img width="519" height="402" alt="image" src="https://github.com/user-attachments/assets/764fdc61-821e-48f3-b516-7921a747bba0" />
+
+*Figura 5. Prueba 1, taquicardia con alarma de frecuencia alta.*
+
 ## Resultados de la Prueba 2
 
 **Tabla 2. Comparación entre los valores simulados y registrados durante la segunda prueba.**
@@ -124,6 +157,41 @@ Durante las pruebas se comprobó la activación de las alarmas visuales y sonora
 En la simulación de hipoxemia, el valor de SpO₂ de 85 % se encontraba por debajo del límite inferior configurado de 90 %, por lo que la activación de la alarma fue correcta.
 
 En la condición de baja perfusión de la segunda prueba, el monitor generó las alarmas técnicas «Sin pulso» y «Exceso de luz para SpO₂».
+
+## Resultados de la Prueba 2
+
+**Bradicardia.** Se obtuvieron nuevamente 40 lpm y 95 % (Figura 6).
+
+<img width="395" height="299" alt="image" src="https://github.com/user-attachments/assets/91766a1d-b1c4-4094-9675-9102a999d0bc" />
+
+
+*Figura 6. Prueba 2, bradicardia.*
+
+**Hipoxemia.** Con 80 lpm y 85 %, se activó de nuevo la alarma «SpO₂ bajo < 90» (Figura 7).
+
+<img width="431" height="320" alt="image" src="https://github.com/user-attachments/assets/2d83e550-686f-47e7-8923-417039cde2ec" />
+
+
+*Figura 7. Prueba 2, hipoxemia con alarma.*
+
+**Baja perfusión.** La pantalla de límites muestra SpO₂ configurada entre 90 % y 97 % y límites de FC de 50 y 120 lpm (Figura 8). Con el modo 99 % Low Perf, el monitor no mostró valor numérico de SpO₂ y emitió las alarmas técnicas «Sin pulso» y «Exceso de luz para SpO₂», aunque se mantuvo una onda periódica (Figura 9).
+
+<img width="388" height="277" alt="image" src="https://github.com/user-attachments/assets/4b212df6-994d-4d88-ad84-edb00f2a8363" />
+
+
+*Figura 8. Prueba 2, límites de alarma configurados.*
+
+<img width="420" height="311" alt="image" src="https://github.com/user-attachments/assets/bd2bfffa-23fa-44b4-830a-290db98965e1" />
+
+
+*Figura 9. Prueba 2, baja perfusión sin lectura de SpO₂.*
+
+**Taquicardia.** El monitor mostró 140 lpm y 98 % (Figura 10).
+
+<img width="480" height="436" alt="image" src="https://github.com/user-attachments/assets/0f3e5d35-d07a-4b1e-adfd-2e1fd247a5a9" />
+
+
+*Figura 10. Prueba 2, taquicardia.*
 
 # **Análisis de resultados**
 
