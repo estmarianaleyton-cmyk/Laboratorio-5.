@@ -157,9 +157,11 @@ Donde:
 
 El error porcentual se calculó mediante:
 
+
 $$
-E_{\%} = \frac{|X_m-X_s|}{X_s}\times100
+E_{\mathrm{porcentual}} = \frac{\left|X_m-X_s\right|}{X_s}\times 100
 $$
+
 
 Por ejemplo, para la medición de saturación elevada de la primera prueba, considerando el valor de referencia de 99 % establecido en la guía y la lectura observada de 100 %:
 
