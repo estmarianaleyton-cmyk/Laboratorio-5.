@@ -45,8 +45,6 @@ donde X_simulado es el valor nominal del modo seleccionado en el OxSim OX-1, tom
 
 Es importante tener en cuenta que, según el fabricante, la exactitud de SpO₂ del uMEC 100 se validó en humanos comparando sus lecturas con muestras de sangre arterial analizadas en un CO-oxímetro. Un simulador puede usarse para verificar la exactitud de la frecuencia de pulso, pero no la de SpO₂ [1]. Por eso, en esta práctica la comparación de SpO₂ se interpreta como una verificación de la consistencia entre el valor simulado y el valor mostrado, y no como una evaluación de la exactitud clínica del oxímetro.
 
-
-
 # **Resultados**
 
 Durante el desarrollo de la práctica se realizaron dos series de pruebas utilizando el simulador Pronk OxSim OX-1 y el monitor Mindray uMEC 100.
@@ -60,7 +58,7 @@ Las condiciones evaluadas fueron:
 - Saturación elevada en modo de baja perfusión: SpO₂ de 99 %.
 - Taquicardia: 140 lpm y SpO₂ de 98 %.
 
-## Resultados de la Prueba 1
+## *Resultados de la Prueba 1*
 
 **Tabla 1. Comparación entre los valores simulados y registrados por el monitor.**
 
@@ -85,7 +83,7 @@ Las ondas fotopletismográficas mostraron variaciones en su periodicidad de acue
 
 Se realizaron dos series de pruebas con el simulador Pronk OxSim OX-1 y el monitor Mindray uMEC 100. En ambas, el monitor tomó la FC del pulso (origen SpO₂), porque no había electrodos de ECG conectados. La alarma técnica «T1 baja < 35 °C» aparece en varias capturas porque no había sonda de temperatura sobre un paciente (lectura ambiente de 22 a 25 °C) y no está relacionada con las pruebas.
 
-## Imágenes de la Prueba 1
+## *Imágenes de la Prueba 1*
 
 **Bradicardia.** El monitor mostró 40 lpm y SpO₂ de 95 %, iguales a los valores simulados (Figura 1). La onda PPG presenta pulsos bien separados.
 
@@ -115,7 +113,7 @@ Se realizaron dos series de pruebas con el simulador Pronk OxSim OX-1 y el monit
 
 *Figura 5. Prueba 1, taquicardia con alarma de frecuencia alta.*
 
-## Resultados de la Prueba 2
+## *Resultados de la Prueba 2*
 
 **Tabla 2. Comparación entre los valores simulados y registrados durante la segunda prueba.**
 
@@ -140,7 +138,7 @@ En la pantalla se observaron las siguientes alarmas:
 
 Se observó una señal fotopletismográfica periódica.
 
-## Resultados de la verificación de alarmas
+## *Resultados de la verificación de alarmas*
 
 **Tabla 3. Verificación funcional del sistema de alarmas.**
 
@@ -157,7 +155,7 @@ En la simulación de hipoxemia, el valor de SpO₂ de 85 % se encontraba por deb
 
 En la condición de baja perfusión de la segunda prueba, el monitor generó las alarmas técnicas «Sin pulso» y «Exceso de luz para SpO₂».
 
-## Imágenes de la Prueba 2
+## *Imágenes de la Prueba 2*
 
 **Bradicardia.** Se obtuvieron nuevamente 40 lpm y 95 % (Figura 6).
 
