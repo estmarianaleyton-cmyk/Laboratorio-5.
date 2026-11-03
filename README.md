@@ -336,7 +336,9 @@ Por otra parte el simulador OxSim OX-1 reproduce condiciones controladas que no 
 
 # **Conclusiones**
 
-
+Esta práctica verificó el desempeño técnico y funcional del monitor Mindray uMEC 100 al medir frecuencia cardíaca (FC) y saturación de oxígeno (SpO₂) y al activar alarmas, usando el simulador óptico OxSim OX-1 como referencia controlada.
+En FC, el monitor coincidió con el simulador en 40, 80 y 140 lpm en las dos pruebas (error absoluto y porcentual de 0, dentro de los ±3 bpm del fabricante). En SpO₂, las condiciones de bradicardia, hipoxemia y taquicardia también coincidieron con el valor simulado (error de 0 puntos, dentro de ±2 %). La condición de baja perfusión fue la excepción: en la primera prueba el monitor mostró 100 % frente a 99 % simulado (1 punto de diferencia), y en la segunda no entregó valor numérico y emitió las alarmas técnicas «Sin pulso» y «Exceso de luz para SpO₂». Las alarmas visuales y sonoras respondieron en todas las condiciones evaluadas, y el período de la onda fotopletismográfica varió de forma inversa a la FC, como se espera.
+Estos hallazgos indican que el equipo es consistente en la medición de pulso y que reconoce cuándo la señal no permite una lectura válida, en lugar de mostrar un número dudoso. Esto es útil para decidir si un monitor puede seguir en servicio en un programa de verificación. Como la exactitud de SpO₂ se valida clínicamente con sangre arterial, el simulador solo permite comprobar consistencia, no exactitud clínica. Como siguiente paso, se propone repetir la condición de baja perfusión con más lecturas, documentar los límites de alarma configurados y comparar con otro sensor o simulador que incluya movimiento y luz ambiental.
 
 
 
