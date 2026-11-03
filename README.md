@@ -85,7 +85,7 @@ Las ondas fotopletismográficas mostraron variaciones en su periodicidad de acue
 
 Se realizaron dos series de pruebas con el simulador Pronk OxSim OX-1 y el monitor Mindray uMEC 100. En ambas, el monitor tomó la FC del pulso (origen SpO₂), porque no había electrodos de ECG conectados. La alarma técnica «T1 baja < 35 °C» aparece en varias capturas porque no había sonda de temperatura sobre un paciente (lectura ambiente de 22 a 25 °C) y no está relacionada con las pruebas.
 
-## Resultados de la Prueba 1
+## Imágenes de la Prueba 1
 
 **Bradicardia.** El monitor mostró 40 lpm y SpO₂ de 95 %, iguales a los valores simulados (Figura 1). La onda PPG presenta pulsos bien separados.
 
@@ -101,18 +101,17 @@ Se realizaron dos series de pruebas con el simulador Pronk OxSim OX-1 y el monit
 
 **Baja perfusión.** Con el OxSim en modo 99 % Low Perf (Figura 3), el monitor mostró 100 % de SpO₂, un punto por encima del valor simulado, con un índice de perfusión de 0,45. Como 100 % supera el límite superior de 97 %, se activó la alarma «SpO₂ alto > 97» (Figura 4).
 
-<img width="602" height="447" alt="image" src="https://github.com/user-attachments/assets/e81d6888-d584-4ce7-8cf0-ea4f3299418c" />
+<img width="480" height="436" alt="image" src="https://github.com/user-attachments/assets/0f3e5d35-d07a-4b1e-adfd-2e1fd247a5a9" />
 
 *Figura 3. OxSim OX-1 en modo 99 % Low Perf.*
 
-<img width="485" height="365" alt="image" src="https://github.com/user-attachments/assets/2be59895-bba1-4900-8cee-1462f719d274" />
-
+<img width="496" height="371" alt="image" src="https://github.com/user-attachments/assets/e6e1695d-1482-4613-9918-0e318e5ba0c6" />
 
 *Figura 4. Prueba 1, baja perfusión: SpO₂ de 100 % y alarma de SpO₂ alta.*
 
 **Taquicardia.** El monitor mostró 140 lpm y 98 %. El límite superior de FC era de 110 lpm y se activó la alarma «FP alta > 110» (Figura 5). La onda PPG presenta pulsos más próximos entre sí.
 
-<img width="519" height="402" alt="image" src="https://github.com/user-attachments/assets/764fdc61-821e-48f3-b516-7921a747bba0" />
+<img width="485" height="365" alt="image" src="https://github.com/user-attachments/assets/2be59895-bba1-4900-8cee-1462f719d274" />
 
 *Figura 5. Prueba 1, taquicardia con alarma de frecuencia alta.*
 
@@ -158,38 +157,33 @@ En la simulación de hipoxemia, el valor de SpO₂ de 85 % se encontraba por deb
 
 En la condición de baja perfusión de la segunda prueba, el monitor generó las alarmas técnicas «Sin pulso» y «Exceso de luz para SpO₂».
 
-## Resultados de la Prueba 2
+## Imágenes de la Prueba 2
 
 **Bradicardia.** Se obtuvieron nuevamente 40 lpm y 95 % (Figura 6).
 
-<img width="395" height="299" alt="image" src="https://github.com/user-attachments/assets/91766a1d-b1c4-4094-9675-9102a999d0bc" />
-
+<img width="519" height="402" alt="image" src="https://github.com/user-attachments/assets/764fdc61-821e-48f3-b516-7921a747bba0" />
 
 *Figura 6. Prueba 2, bradicardia.*
 
 **Hipoxemia.** Con 80 lpm y 85 %, se activó de nuevo la alarma «SpO₂ bajo < 90» (Figura 7).
 
-<img width="431" height="320" alt="image" src="https://github.com/user-attachments/assets/2d83e550-686f-47e7-8923-417039cde2ec" />
-
+<img width="395" height="299" alt="image" src="https://github.com/user-attachments/assets/91766a1d-b1c4-4094-9675-9102a999d0bc" />
 
 *Figura 7. Prueba 2, hipoxemia con alarma.*
 
 **Baja perfusión.** La pantalla de límites muestra SpO₂ configurada entre 90 % y 97 % y límites de FC de 50 y 120 lpm (Figura 8). Con el modo 99 % Low Perf, el monitor no mostró valor numérico de SpO₂ y emitió las alarmas técnicas «Sin pulso» y «Exceso de luz para SpO₂», aunque se mantuvo una onda periódica (Figura 9).
 
-<img width="388" height="277" alt="image" src="https://github.com/user-attachments/assets/4b212df6-994d-4d88-ad84-edb00f2a8363" />
-
+<img width="431" height="320" alt="image" src="https://github.com/user-attachments/assets/2d83e550-686f-47e7-8923-417039cde2ec" />
 
 *Figura 8. Prueba 2, límites de alarma configurados.*
 
-<img width="420" height="311" alt="image" src="https://github.com/user-attachments/assets/bd2bfffa-23fa-44b4-830a-290db98965e1" />
-
+<img width="388" height="277" alt="image" src="https://github.com/user-attachments/assets/4b212df6-994d-4d88-ad84-edb00f2a8363" />
 
 *Figura 9. Prueba 2, baja perfusión sin lectura de SpO₂.*
 
 **Taquicardia.** El monitor mostró 140 lpm y 98 % (Figura 10).
 
-<img width="480" height="436" alt="image" src="https://github.com/user-attachments/assets/0f3e5d35-d07a-4b1e-adfd-2e1fd247a5a9" />
-
+<img width="420" height="311" alt="image" src="https://github.com/user-attachments/assets/bd2bfffa-23fa-44b4-830a-290db98965e1" />
 
 *Figura 10. Prueba 2, taquicardia.*
 
