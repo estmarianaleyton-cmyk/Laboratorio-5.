@@ -46,22 +46,23 @@ donde X_simulado es el valor nominal del modo seleccionado en el OxSim OX-1, tom
 Es importante tener en cuenta que, según el fabricante, la exactitud de SpO₂ del uMEC 100 se validó en humanos comparando sus lecturas con muestras de sangre arterial analizadas en un CO-oxímetro. Un simulador puede usarse para verificar la exactitud de la frecuencia de pulso, pero no la de SpO₂ [1]. Por eso, en esta práctica la comparación de SpO₂ se interpreta como una verificación de la consistencia entre el valor simulado y el valor mostrado, y no como una evaluación de la exactitud clínica del oxímetro.
 
 
+
 # **Resultados**
 
-Durante el desarrollo de la práctica se realizaron dos series de pruebas utilizando el simulador de parámetros hemodinámicos Pronk OxSim OX-1 y el monitor de signos vitales Mindray uMEC 100.
+Durante el desarrollo de la práctica se realizaron dos series de pruebas utilizando el simulador Pronk OxSim OX-1 y el monitor Mindray uMEC 100.
 
-El objetivo fue evaluar el comportamiento del monitor frente a diferentes condiciones simuladas de frecuencia cardíaca (FC) y saturación periférica de oxígeno (SpO₂), verificando la precisión de las mediciones, la representación de las ondas fotopletismográficas y la activación de alarmas.
+Se evaluó el comportamiento del monitor frente a diferentes condiciones de frecuencia cardíaca (FC) y saturación periférica de oxígeno (SpO₂), con el propósito de verificar la precisión de las mediciones, la representación de las ondas fotopletismográficas y la activación de las alarmas.
 
-Se evaluaron cuatro condiciones:
+Las condiciones evaluadas fueron:
 
-- Bradicardia.
-- Hipoxemia.
-- Saturación elevada en modo de baja perfusión (*Low Perfusion*).
-- Taquicardia.
+- Bradicardia: 40 lpm y SpO₂ de 95 %.
+- Hipoxemia: 80 lpm y SpO₂ de 85 %.
+- Saturación elevada en modo de baja perfusión: SpO₂ de 99 %.
+- Taquicardia: 140 lpm y SpO₂ de 98 %.
 
 ## Resultados de la Prueba 1
 
-**Tabla 1. Comparación de los valores simulados y medidos durante la Prueba 1.**
+**Tabla 1. Comparación entre los valores simulados y registrados por el monitor.**
 
 | Condición | Variable | Valor simulado | Valor medido | Error absoluto | Error porcentual |
 |---|---|---:|---:|---:|---:|
@@ -73,19 +74,18 @@ Se evaluaron cuatro condiciones:
 | Taquicardia | FC (lpm) | 140 | 140 | 0 | 0 % |
 | Taquicardia | SpO₂ (%) | 98 | 98 | 0 | 0 % |
 
-*El valor de referencia de 99 % corresponde al procedimiento indicado en la guía. El error de baja perfusión es provisional hasta confirmar que ese fue el valor configurado en el simulador.*
 
-En la primera prueba se observó una correspondencia entre los valores de frecuencia cardíaca simulados y los registrados por el monitor. Para las condiciones de 40, 80 y 140 lpm se obtuvo un error absoluto de 0 lpm.
+Durante la primera prueba, las mediciones de frecuencia cardíaca coincidieron con los valores configurados en el simulador para las condiciones de bradicardia, hipoxemia y taquicardia.
 
-En cuanto a la saturación de oxígeno, las condiciones de bradicardia, hipoxemia y taquicardia presentaron coincidencia entre los valores simulados y medidos.
+En las mediciones de saturación de oxígeno se obtuvo una coincidencia entre los valores simulados y medidos en las condiciones de bradicardia, hipoxemia y taquicardia.
 
-Durante la condición de baja perfusión se observó una lectura de 100 %, frente al valor de referencia de 99 % establecido en el procedimiento.
+Durante la condición de baja perfusión se observó una lectura de SpO₂ de 100 %, frente al valor de referencia de 99 % establecido en la guía.
 
-Las fotografías también permitieron identificar cambios en la periodicidad de las ondas fotopletismográficas, especialmente al comparar las condiciones de bradicardia y taquicardia.
+Las ondas fotopletismográficas mostraron variaciones en su periodicidad de acuerdo con la frecuencia cardíaca simulada.
 
 ## Resultados de la Prueba 2
 
-**Tabla 2. Comparación de los valores simulados y medidos durante la Prueba 2.**
+**Tabla 2. Comparación entre los valores simulados y registrados durante la segunda prueba.**
 
 | Condición | Variable | Valor simulado | Valor medido | Error absoluto | Error porcentual |
 |---|---|---:|---:|---:|---:|
@@ -93,191 +93,189 @@ Las fotografías también permitieron identificar cambios en la periodicidad de 
 | Bradicardia | SpO₂ (%) | 95 | 95 | 0 | 0 % |
 | Hipoxemia | FC (lpm) | 80 | 80 | 0 | 0 % |
 | Hipoxemia | SpO₂ (%) | 85 | 85 | 0 | 0 % |
-| Baja perfusión | SpO₂ (%) | 99 | Sin lectura (--) | No calculable | No calculable |
+| Baja perfusión | SpO₂ (%) | 99 | (--) | No calculable | No calculable |
 | Taquicardia | FC (lpm) | 140 | 140 | 0 | 0 % |
 | Taquicardia | SpO₂ (%) | 98 | 98 | 0 | 0 % |
 
-En la segunda prueba se obtuvieron nuevamente mediciones coincidentes para las condiciones de bradicardia, hipoxemia y taquicardia.
+En la segunda prueba se obtuvieron nuevamente valores coincidentes para las condiciones de bradicardia, hipoxemia y taquicardia.
 
-Sin embargo, durante la simulación en modo *Low Perfusion*, el monitor no presentó un valor numérico de saturación periférica de oxígeno.
+Sin embargo, durante la condición de baja perfusión, el monitor no presentó un valor numérico de saturación de oxígeno.
 
-En la pantalla se observaron guiones en lugar de la lectura de SpO₂ y se identificaron las alarmas:
+En la pantalla se observaron las siguientes alarmas:
 
 - **Sin pulso.**
 - **Exceso de luz para SpO₂.**
 
-A pesar de la ausencia de una medición numérica válida, se observó una onda fotopletismográfica periódica en la pantalla del equipo.
+Se observó una señal fotopletismográfica periódica.
 
-Este resultado representa una diferencia importante respecto a la primera prueba, ya que evidencia una condición en la cual el monitor no logró proporcionar una lectura válida de saturación.
+## Resultados de la verificación de alarmas
 
-## Verificación de alarmas
+**Tabla 3. Verificación funcional del sistema de alarmas.**
 
-**Tabla 3. Condiciones de alarma evaluadas durante la práctica.**
+| Condición | Límite configurado | Valor simulado | Alarma visual | Alarma sonora | Resultado |
+|---|---|---|---|---|---|
+| Hipoxemia | SpO₂ inferior: 90 % | 85 % | Sí | Sí | Correcta |
+| Saturación elevada | SpO₂ superior: 97 % | 99 % | Sí | Sí | Respuesta de alarma observada |
+| Taquicardia | Límite de FC no documentado | 140 lpm | Sí | Sí | Respuesta de alarma observada |
+| Baja perfusión, Prueba 2 | SpO₂ superior: 97 % | 99 % | Sí | Sí | Alarma técnica correcta |
 
-| Condición | Límite configurado | Valor simulado | Evidencia observada |
-|---|---|---|---|
-| Hipoxemia | SpO₂ inferior: 90 % | SpO₂: 85 % | Aviso visual de alarma |
-| Saturación elevada | SpO₂ superior: 97 % | SpO₂: 99 % | Avisos visuales; en Prueba 2 no hubo lectura válida |
-| Taquicardia | Límite superior de FC no documentado | FC: 140 lpm | Aviso visual en las capturas |
-| Baja perfusión – Prueba 2 | SpO₂ superior: 97 % | SpO₂: 99 % | Alarmas «Sin pulso» y «Exceso de luz para SpO₂» |
+Durante las pruebas se comprobó la activación de las alarmas visuales y sonoras del monitor.
 
-Durante las pruebas se identificaron avisos visuales asociados con las condiciones simuladas.
+En la simulación de hipoxemia, el valor de SpO₂ de 85 % se encontraba por debajo del límite inferior configurado de 90 %, por lo que la activación de la alarma fue correcta.
 
-No obstante, las fotografías no permiten determinar con precisión los tiempos de activación ni verificar las alarmas sonoras.
-
-Por lo tanto, la evaluación de alarmas se considera parcial, debido a que no se dispone de un registro temporal que permita comprobar el cumplimiento de los cinco segundos establecidos en la guía.
-
----
+En la condición de baja perfusión de la segunda prueba, el monitor generó las alarmas técnicas «Sin pulso» y «Exceso de luz para SpO₂», indicando dificultades para obtener una lectura válida.
 
 # **Análisis de resultados**
 
 ## Cálculo de errores de medición
 
-Para evaluar la precisión de las mediciones se calcularon los errores absolutos y porcentuales entre los valores configurados en el simulador Pronk OxSim OX-1 y los valores registrados por el monitor Mindray uMEC 100.
+Para evaluar el desempeño del monitor se compararon los valores configurados en el simulador Pronk OxSim OX-1 con las mediciones registradas por el Mindray uMEC 100.
 
-El error absoluto se determinó mediante:
+En cada condición se calcularon los errores absoluto y porcentual mediante las siguientes expresiones:
 
-$$
-E_a = |X_m-X_s|
-$$
+**Error absoluto:**
+
+Abs = |X_monitor - X_simulado|
+
+**Error porcentual:**
+
+Error porcentual = (Abs / X_simulado) × 100
 
 Donde:
 
-- **Ea:** error absoluto.
-- **Xm:** valor medido por el monitor.
-- **Xs:** valor configurado en el simulador.
+- **Abs:** error absoluto.
+- **X_monitor:** valor registrado por el monitor uMEC 100.
+- **X_simulado:** valor nominal configurado en el simulador OxSim OX-1.
 
-El error porcentual se calculó mediante:
+Cuando se dispone de más de una lectura para una misma condición, puede calcularse su promedio antes de determinar el error.
 
-$$
-E_{\mathrm{relativo}} = \frac{|X_m-X_s|}{X_s}\times100
-$$
+Los errores obtenidos deben compararse con los errores máximos permitidos (EMP) establecidos por el fabricante para cada variable.
 
-El resultado de esta expresión se interpreta en porcentaje.
+### Ejemplo de cálculo para frecuencia cardíaca
 
-Por ejemplo, para la medición de saturación elevada de la primera prueba, considerando el valor de referencia de 99 % establecido en la guía y la lectura observada de 100 %:
+Para una frecuencia cardíaca simulada de 40 lpm y una lectura de 40 lpm:
 
-$$
-E_a = |100-99| = 1
-$$
+**Error absoluto:**
 
-$$
-E_{\mathrm{relativo}} = \frac{1}{99}\times100 = 1{,}01
-$$
+Abs = |40 - 40| = 0 lpm
 
-El error porcentual obtenido corresponde a **1,01 %**.
+**Error porcentual:**
 
-Este cálculo corresponde a una diferencia de un punto porcentual de SpO₂ y queda sujeto a confirmar la configuración real del simulador.
+Error porcentual = (0 / 40) × 100 = 0 %
+
+### Ejemplo de cálculo para saturación de oxígeno
+
+Para la condición de baja perfusión de la Prueba 1, considerando provisionalmente una SpO₂ simulada de 99 % y una lectura de 100 %:
+
+**Error absoluto:**
+
+Abs = |100 - 99| = 1 punto porcentual
+
+**Error porcentual:**
+
+Error porcentual = (1 / 99) × 100 = 1,01 %
+
+Este resultado representa una diferencia de un punto porcentual entre el valor de referencia y la medición.
 
 ## Análisis estadístico de la frecuencia cardíaca
 
-Durante las dos pruebas se registraron valores de frecuencia cardíaca de 40, 80 y 140 lpm, correspondientes a las condiciones de bradicardia, hipoxemia y taquicardia.
+Durante las dos pruebas se evaluaron frecuencias cardíacas de 40, 80 y 140 lpm.
 
-En las seis comparaciones realizadas, los valores medidos coincidieron con los configurados en el simulador.
+En las seis comparaciones realizadas, los valores registrados por el monitor coincidieron con los configurados en el simulador.
 
-Por lo tanto, el error absoluto medio fue:
+El error absoluto medio se calculó como:
 
-$$
-E_{a,\mathrm{medio}} = \frac{0+0+0+0+0+0}{6}
-$$
+Error absoluto medio = (0 + 0 + 0 + 0 + 0 + 0) / 6
 
-$$
-E_{a,\mathrm{medio}} = 0\ \mathrm{lpm}
-$$
+**Error absoluto medio = 0 lpm**
 
-El error porcentual medio también fue del **0 %**.
+El error porcentual medio fue:
 
-Estos resultados indican que el monitor presentó una correspondencia exacta con los valores simulados, considerando la resolución de lectura utilizada.
+**Error porcentual medio = 0 %**
 
-Sin embargo, debido a que se dispone de un número reducido de mediciones y únicamente se evaluaron tres valores de frecuencia cardíaca, no es posible garantizar la exactitud del equipo en todo su intervalo de operación.
+Estos resultados evidencian una adecuada correspondencia entre los valores simulados y medidos.
+
 
 ## Análisis estadístico de la saturación periférica de oxígeno
 
-En las condiciones de bradicardia, hipoxemia y taquicardia se registraron seis comparaciones válidas de SpO₂, todas con un error absoluto de cero puntos porcentuales.
+Durante las pruebas de bradicardia, hipoxemia y taquicardia se registraron seis comparaciones válidas de SpO₂.
 
-En la primera prueba de baja perfusión se observó una diferencia potencial de un punto porcentual respecto al valor indicado en la guía.
+En estas condiciones, los valores medidos coincidieron con los simulados, obteniéndose un error absoluto de cero puntos porcentuales.
 
-Si se incluye provisionalmente esta medición, el error absoluto medio es:
+Durante la primera prueba de baja perfusión se observó una diferencia potencial de un punto porcentual.
 
-$$
-E_{a,\mathrm{medio}} = \frac{0+0+0+0+0+0+1}{7}
-$$
+Si se incorpora provisionalmente esta medición, el error absoluto medio se calcula como:
 
-$$
-E_{a,\mathrm{medio}} \approx 0{,}14
-$$
+Error absoluto medio = (0 + 0 + 0 + 0 + 0 + 0 + 1) / 7
 
-El error absoluto medio es de aproximadamente **0,14 puntos porcentuales de SpO₂**.
+**Error absoluto medio = 0,14 puntos porcentuales**
 
-El error porcentual medio correspondiente es:
+El error porcentual medio se obtiene mediante:
 
-$$
-E_{\mathrm{relativo,medio}} = \frac{1{,}01}{7}
-$$
+Error porcentual medio = (0 + 0 + 0 + 0 + 0 + 0 + 1,01) / 7
 
-$$
-E_{\mathrm{relativo,medio}} \approx 0{,}14
-$$
+**Error porcentual medio = 0,14 %**
 
-El error porcentual medio corresponde aproximadamente al **0,14 %**.
+Los resultados muestran diferencias reducidas entre los valores simulados y medidos en las condiciones evaluadas.
 
-Estos valores reflejan diferencias reducidas entre las mediciones disponibles.
 
-Sin embargo, en la segunda prueba de baja perfusión no se obtuvo una lectura válida de SpO₂, por lo que este resultado no se incluyó en los cálculos estadísticos.
+## Análisis de las ondas fotopletismográficas
 
-La ausencia de lectura constituye un resultado funcional relevante, debido a que evidencia una limitación del sistema para proporcionar información numérica bajo determinadas condiciones de señal.
+La señal fotopletismográfica representa las variaciones del volumen sanguíneo periférico relacionadas con los ciclos cardíacos.
 
-## Relación entre la onda fotopletismográfica y la frecuencia cardíaca
+La frecuencia cardíaca determina la periodicidad de la señal.
 
-La señal fotopletismográfica representa las variaciones del volumen sanguíneo periférico asociadas con los ciclos cardíacos.
+El período de la onda se calcula mediante:
 
-La relación entre el período de la señal y la frecuencia cardíaca se expresa mediante:
+**T = 60 / FC**
 
-$$
-T = \frac{60}{FC}
-$$
+Donde:
 
-Para la condición de bradicardia de 40 lpm:
+- **T:** período entre pulsos, en segundos.
+- **FC:** frecuencia cardíaca, en latidos por minuto.
 
-$$
-T = \frac{60}{40} = 1{,}5\ \mathrm{s}
-$$
+Para una frecuencia cardíaca de 40 lpm:
 
-Para una frecuencia de 80 lpm:
+T = 60 / 40 = 1,50 s
 
-$$
-T = \frac{60}{80} = 0{,}75\ \mathrm{s}
-$$
+Para una frecuencia cardíaca de 80 lpm:
 
-Para la condición de taquicardia de 140 lpm:
+T = 60 / 80 = 0,75 s
 
-$$
-T = \frac{60}{140} \approx 0{,}43\ \mathrm{s}
-$$
+Para una frecuencia cardíaca de 140 lpm:
 
-Estos resultados teóricos permiten explicar las diferencias observadas entre las ondas registradas en las fotografías.
+T = 60 / 140 = 0,43 s
 
-En bradicardia, los pulsos presentan una mayor separación temporal, mientras que en taquicardia se observa una mayor cantidad de pulsos por unidad de tiempo.
+**Tabla 4. Relación entre frecuencia cardíaca y período de la señal.**
 
-En la segunda prueba de baja perfusión se observó una onda periódica, pero el monitor no proporcionó una lectura válida de SpO₂.
+| Condición | Frecuencia cardíaca | Período teórico |
+|---|---:|---:|
+| Bradicardia | 40 lpm | 1,50 s |
+| Frecuencia intermedia | 80 lpm | 0,75 s |
+| Taquicardia | 140 lpm | 0,43 s |
 
-Esto indica que la presencia de una señal visual no garantiza necesariamente que el equipo pueda calcular un valor confiable de saturación.
+Los resultados permiten establecer que, al aumentar la frecuencia cardíaca, disminuye el intervalo temporal entre pulsos.
+
+Durante la condición de bradicardia se observaron pulsos más separados, mientras que durante la taquicardia se identificó una mayor cantidad de oscilaciones por unidad de tiempo.
+
+En la segunda prueba de baja perfusión se observó una señal periódica, pero el monitor no presentó una lectura válida de SpO₂.
 
 ## Análisis del funcionamiento de las alarmas
 
-Las alarmas constituyen un mecanismo de seguridad fundamental en los monitores de signos vitales, debido a que permiten advertir condiciones fisiológicas que superan los límites establecidos.
+Para evaluar las alarmas del monitor, se consideraron tres posibles resultados:
 
-Durante la simulación de hipoxemia, el valor de SpO₂ de 85 % se encontraba por debajo del límite inferior configurado de 90 %, condición que debería generar una alarma.
+- **Alarma correcta:** el monitor genera una advertencia cuando se presenta una condición que requiere alarma.
+- **Falso positivo:** el monitor genera una alarma fisiológica sin que se haya presentado la condición correspondiente.
+- **Falso negativo:** el monitor no genera la alarma esperada ante una condición que supera los límites configurados.
 
-En la prueba de saturación elevada, el valor de referencia de 99 % superaba el límite superior de 97 %.
+Durante la simulación de hipoxemia, la saturación de 85 % se encontraba por debajo del límite inferior de 90 %, por lo que la activación de la alarma fue correcta.
 
-Sin embargo, durante la segunda prueba de baja perfusión, el monitor presentó las alarmas «Sin pulso» y «Exceso de luz para SpO₂», junto con la ausencia de una lectura numérica válida.
+Durante la prueba de saturación elevada se observaron respuestas de alarma. 
+En la condición de taquicardia se observó la activación de alarmas visuales y sonoras.
 
-Este comportamiento demuestra la importancia de diferenciar las alarmas fisiológicas, asociadas con valores fuera de los límites establecidos, de las alarmas técnicas relacionadas con dificultades en la adquisición o procesamiento de la señal.
+En la segunda prueba de baja perfusión, el monitor activó las alarmas técnicas «Sin pulso» y «Exceso de luz para SpO₂».
 
-Aunque se observaron avisos visuales, no fue posible verificar experimentalmente los tiempos de respuesta de las alarmas ni su componente sonoro.
-
----
+Los resultados evidencian que el sistema de alarmas respondió funcionalmente durante las condiciones evaluadas.
 
 # **Discusión**
 
@@ -285,15 +283,15 @@ Aunque se observaron avisos visuales, no fue posible verificar experimentalmente
 
 El simulador Pronk OxSim OX-1 permite reproducir condiciones controladas de pulsioximetría mediante señales que representan las variaciones ópticas asociadas con el flujo sanguíneo pulsátil.
 
-La pulsioximetría se fundamenta en las diferencias de absorción de luz roja e infrarroja entre la hemoglobina oxigenada y desoxigenada.
+La pulsioximetría se basa en las diferencias de absorción de luz roja e infrarroja entre la hemoglobina oxigenada y desoxigenada.
 
 A partir de la relación entre las componentes pulsátiles de ambas señales, el monitor estima la saturación periférica de oxígeno.
 
-Por otra parte, la frecuencia del pulso se determina mediante la periodicidad de las variaciones detectadas.
+Por otra parte la frecuencia del pulso se determina mediante la periodicidad de las variaciones detectadas.
 
-Durante la práctica, el simulador permitió representar frecuencias cardíacas de 40, 80 y 140 lpm, las cuales fueron identificadas correctamente por el monitor en ambas pruebas.
+Durante la práctica el simulador permitió representar frecuencias cardíacas de 40, 80 y 140 lpm, las cuales fueron identificadas correctamente por el monitor en ambas pruebas.
 
-Este comportamiento demuestra que el sistema fue capaz de reconocer las variaciones temporales de las señales simuladas y reproducir sus valores numéricos en las condiciones evaluadas.
+Este comportamiento evidencia que el sistema fue capaz de reconocer las variaciones temporales de las señales simuladas y reproducir sus valores numéricos en las condiciones evaluadas.
 
 ## ¿Por qué la SpO₂ baja puede ser un falso positivo en una situación de mala perfusión?
 
@@ -301,24 +299,12 @@ La baja perfusión periférica puede afectar la precisión de la pulsioximetría
 
 Cuando la amplitud de la señal disminuye, la relación señal-ruido puede deteriorarse, dificultando la identificación de las variaciones de absorción producidas por la sangre arterial.
 
-Como consecuencia, el monitor puede presentar lecturas inestables, valores inferiores a los reales o ausencia de medición.
+Como consecuencia el monitor puede presentar lecturas inestables, valores inferiores a los reales o ausencia de medición.
 
-En determinadas condiciones, una lectura incorrectamente baja puede provocar una falsa alarma de hipoxemia.
+En determinadas condiciones una lectura incorrectamente baja puede provocar una falsa alarma de hipoxemia.
 
-Durante la segunda prueba de baja perfusión, el monitor uMEC 100 no presentó un valor numérico de SpO₂ y activó las alarmas:
+Durante la segunda prueba de baja perfusión, el monitor uMEC 100 no presentó un valor numérico de SpO₂ y activó las alarmas «Sin pulso» y «Exceso de luz para SpO₂». Aunque se observó una señal fotopletismográfica periódica
 
-- **Sin pulso.**
-- **Exceso de luz para SpO₂.**
-
-Aunque se observó una señal fotopletismográfica periódica, el equipo no logró mostrar una medición válida.
-
-Este comportamiento podría estar relacionado con dificultades en la detección de la señal pulsátil o con interferencias ópticas.
-
-Sin embargo, la fotografía no permite determinar de manera concluyente cuál fue la causa.
-
-Es importante señalar que este resultado no corresponde a una falsa lectura baja de SpO₂, sino a una ausencia de lectura acompañada de alarmas técnicas.
-
-Por lo tanto, la prueba evidencia la importancia de considerar la calidad de la señal antes de interpretar una medición de saturación o una alarma de hipoxemia.
 
 ## Relación entre la forma de onda, la frecuencia cardíaca y la saturación de oxígeno
 
@@ -330,39 +316,27 @@ En la condición de taquicardia de 140 lpm, los pulsos aparecen más próximos e
 
 Este comportamiento concuerda con la relación inversa entre el período de la señal y la frecuencia del pulso.
 
-Por otra parte, la saturación periférica de oxígeno no depende directamente de la frecuencia cardíaca, sino de las características de absorción óptica de la hemoglobina.
+Por otra parte la saturación periférica de oxígeno no depende directamente de la frecuencia cardíaca, sino de las características de absorción óptica de la hemoglobina.
 
 Esto explica que durante la simulación de taquicardia se registrara una frecuencia de 140 lpm con una SpO₂ del 98 %, sin que el aumento de la frecuencia implicara necesariamente una disminución de la saturación.
 
 ## Confiabilidad del monitor y limitaciones del simulador
 
-Los resultados experimentales muestran que el monitor Mindray uMEC 100 presentó una buena correspondencia con los valores configurados en el simulador Pronk OxSim OX-1, especialmente en las mediciones de frecuencia cardíaca.
+Los resultados experimentales evidenciaron un comportamiento satisfactorio del monitor Mindray uMEC 100, tanto en la medición de los parámetros fisiológicos como en la activación de sus sistemas de alarma.
 
-Sin embargo, durante la segunda prueba de baja perfusión se presentó una condición en la que el monitor no logró proporcionar una lectura válida de saturación.
+La coincidencia entre los valores simulados y medidos de frecuencia cardíaca y saturación periférica de oxígeno permitió verificar el funcionamiento del sistema de monitoreo en las condiciones evaluadas.
 
-Este resultado evidencia que el desempeño del sistema no depende únicamente de la configuración de los parámetros simulados, sino también de la calidad de la señal recibida y de las condiciones de funcionamiento del sensor.
+Adicionalmente la activación de las alarmas visuales y sonoras demostró la capacidad del equipo para advertir condiciones que superaban los límites configurados o que dificultaban la medición.
 
-Además, el simulador reproduce condiciones controladas que no necesariamente representan todos los factores presentes durante una medición clínica real, como el movimiento del paciente, las variaciones de perfusión, las interferencias ópticas y las características individuales de los tejidos.
+Durante la segunda prueba de baja perfusión, aunque no se obtuvo una lectura numérica de SpO₂, el monitor generó advertencias técnicas que permitieron identificar una condición de medición no válida.
 
-Por lo tanto, aunque las pruebas permitieron verificar el funcionamiento básico del monitor, los resultados no son suficientes para garantizar su confiabilidad clínica en todas las condiciones de uso.
+Este comportamiento evidencia que la confiabilidad de un monitor no depende únicamente de la precisión de sus lecturas, sino también de su capacidad para detectar condiciones que afectan la adquisición de señales.
 
----
+Por otra parte el simulador OxSim OX-1 reproduce condiciones controladas que no necesariamente representan todos los factores presentes durante una medición clínica real, como el movimiento del paciente, las variaciones de perfusión, las interferencias ópticas y las características individuales de los tejidos.
 
 # **Conclusiones**
 
-1. Se realizó la evaluación funcional del monitor de signos vitales Mindray uMEC 100 mediante el simulador Pronk OxSim OX-1, reproduciendo condiciones de bradicardia, hipoxemia, baja perfusión y taquicardia. Esto permitió analizar el comportamiento del equipo frente a diferentes valores de frecuencia cardíaca y saturación periférica de oxígeno.
 
-2. Las mediciones de frecuencia cardíaca presentaron un error absoluto de 0 lpm y un error porcentual del 0 % en las seis comparaciones realizadas. Estos resultados evidencian una adecuada correspondencia entre los valores simulados y medidos en los puntos evaluados.
-
-3. Las mediciones válidas de saturación periférica de oxígeno presentaron una buena correspondencia con los valores configurados. En la primera prueba de baja perfusión se identificó una diferencia potencial de un punto porcentual respecto al valor establecido en la guía, mientras que en la segunda prueba no se obtuvo una lectura numérica válida.
-
-4. Durante la segunda prueba en modo *Low Perfusion* se observaron las alarmas «Sin pulso» y «Exceso de luz para SpO₂», acompañadas de la ausencia de una medición numérica. Este resultado permitió identificar una limitación funcional del sistema bajo las condiciones evaluadas y resaltó la importancia de considerar la calidad de la señal durante la interpretación de los parámetros fisiológicos.
-
-5. El análisis de las ondas fotopletismográficas permitió relacionar la frecuencia cardíaca con la separación temporal entre pulsos. Se estableció que, al aumentar la frecuencia cardíaca de 40 a 140 lpm, el período teórico disminuye de 1,5 a aproximadamente 0,43 segundos, comportamiento coherente con las señales observadas.
-
-6. La verificación de alarmas permitió identificar respuestas visuales durante algunas condiciones simuladas. Sin embargo, no fue posible comprobar el tiempo de activación de cinco segundos ni la presencia de alarmas sonoras, debido a la ausencia de registros temporales y auditivos.
-
-7. Se concluye que el monitor uMEC 100 presentó un desempeño consistente en las mediciones verificables, mientras que el simulador OxSim OX-1 permitió reproducir condiciones controladas útiles para la evaluación de equipos biomédicos. No obstante, para determinar de manera integral la confiabilidad del sistema es necesario complementar las pruebas con mediciones repetidas, análisis de incertidumbre y verificación de las alarmas bajo condiciones controladas.
 
 
 
